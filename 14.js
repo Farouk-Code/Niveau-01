@@ -18,7 +18,7 @@ if (process.argv.length < 3 || process.argv.length > 5) {
             console.log(nbOne);
         } else if ((nbTwo < nbOne && nbTwo > nbThree) || (nbTwo > nbOne && nbTwo < nbThree)) {
             console.log(nbTwo);
-        } else if (nbOne == nbTwo || nbOne == nbThree || nbTwo == nbThree) {
+        } else if (nbOne === nbTwo || nbOne === nbThree || nbTwo === nbThree) {
             console.log("Erreur !")
         } else {
             console.log(nbThree)

@@ -1,7 +1,7 @@
 // 24 to 12
 
 let sequence = /^[0-9:]+$/;
-let argument = "";
+let argument = process.argv[2];
 let periode = "";
 
 function verifChaine(chaine) {
@@ -12,10 +12,9 @@ function afficheHeure (heures, minutes, periode) {
     return `Il est : ${heures.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}${periode}`;
 }
 
-if (!verifChaine(process.argv[2]) || process.argv.length != 3) {
+if (!verifChaine(argument) || process.argv.length != 3) {
     console.log("Erreur");
 } else {
-    argument = process.argv[2];
     let [heures, minutes] = argument.split(':').map(Number);
 
     if (heures > 12) {

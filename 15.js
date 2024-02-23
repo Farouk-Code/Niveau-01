@@ -13,7 +13,7 @@ if (process.argv.length <= 3) {
             break;
         } else {
             number = parseInt(process.argv[i]);
-            if (i == process.argv.length) {
+            if (i === process.argv.length) {
                 nextNumber = number;
             } else {
                 nextNumber = parseInt(process.argv[i + 1]);

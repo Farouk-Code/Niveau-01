@@ -9,7 +9,7 @@ if (argument.length > 1 || !isNaN(argument)) {
     console.log("Erreur !");
 }
 
-for (let i = 0; i < 25; i++) {
+for (let i = 0; i < tableauAlphabet.length; i++) {
     if (tableauAlphabet[i] === argument) {
         for (let x = i; x < 25; x++) {
             resultat += tableauAlphabet[x];
