@@ -1,13 +1,12 @@
 // 12 to 24
 
 let sequence = /^[0-9:]+(AM|PM)$/i;
-let argument = "";
+let argument = process.argv[2];
 
 function verifChaine(chaine) {
     return sequence.test(chaine);
 }
 
-argument = process.argv[2];
 
 if (!verifChaine(argument) || process.argv.length !== 3) {
     console.log("Erreur");
