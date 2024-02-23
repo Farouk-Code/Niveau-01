@@ -7,13 +7,13 @@ function verifChaine(chaine) {
     return sequence.test(chaine);
 }
 
+argument = process.argv[2];
+
 if (!verifChaine(argument) || process.argv.length !== 3) {
     console.log("Erreur");
 } else {
     argument = process.argv[2];
     let [temps, suffixe] = argument.match(/(\d+:\d+)([APMapm]{2})/).slice(1);
-    console.log("temps : " + temps);
-    console.log("Suffixe : " + suffixe);
 
     let [heures, minutes] = temps.split(":").map(Number);
 
