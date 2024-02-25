@@ -1,11 +1,10 @@
 // Pair ou Impair
 
-let number = 0;
+let number = process.argv[2];
 
 if (process.argv.length !== 3) {
     console.log("Rentrez un nombre !");
 } else {
-    number = process.argv[2];
     if (isNaN(number)) {
         console.log("Rentrez un nombre valide !")
     } else {
