@@ -12,6 +12,6 @@ function estPremier(nombre) {
     return nombre + " est un nombre premier.";
 }
 
-let argument = parseInt(process.argv[2], 10);
+let argument = parseInt(process.argv[2]);
 
 console.log(estPremier(argument));
