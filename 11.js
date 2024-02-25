@@ -1,5 +1,5 @@
 function estPremier(nombre) {
-    if (!Number.isInteger(nombre) || nombre <= 1) {
+    if (!parseInt(nombre) || nombre <= 1) {
         return "Le nombre doit être un entier positif.";
     }
 
