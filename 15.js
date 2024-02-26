@@ -26,7 +26,7 @@ if (process.argv.length <= 3) {
         }
     }
 
-    if (estTriee == true) {
+    if (estTriee === true) {
         console.log("La liste est triéée !");
     } else {
         console.log("La liste n'est pas triéée...");
